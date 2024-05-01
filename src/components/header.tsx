@@ -11,16 +11,18 @@ import HeaderAuth from "@/components/header-auth";
 
 const Header = async () => {
   return (
-    <Navbar>
+    <Navbar className="shadow mb-6">
       <NavbarBrand>
-        <Link href="/">Home</Link>
+        <Link href="/" className="font-bold">
+          Home
+        </Link>
       </NavbarBrand>
-      <NavbarContent>
+      <NavbarContent justify="center">
         <NavbarItem>
           <Input />
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent>
+      <NavbarContent justify="end">
         <HeaderAuth />
       </NavbarContent>
     </Navbar>
