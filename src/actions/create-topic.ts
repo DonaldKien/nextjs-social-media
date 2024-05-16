@@ -3,7 +3,7 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import type { Topic } from "@prisma/client";
 import { redirect } from "next/navigation";
-import paths from "@/paths";
+import paths from "@/commons/paths";
 import { db } from "@/db";
 import { revalidatePath } from "next/cache";
 

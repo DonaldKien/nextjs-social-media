@@ -2,7 +2,7 @@
 
 import { z } from "zod";
 import { db } from "@/db";
-import paths from "@/paths";
+import paths from "@/commons/paths";
 import type { Post } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Chip } from "@nextui-org/react";
 import { db } from "@/db";
-import paths from "@/paths";
+import paths from "@/commons/paths";
 
 const TopicList = async () => {
   const topics = await db.topic.findMany();
